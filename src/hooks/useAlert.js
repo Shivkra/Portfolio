@@ -9,9 +9,9 @@ const useAlert = () => {
 
     const hideAlert = () => setAlert({
         show: false, text: '', type: 'danger'
-    })
-
-  return {alert, showAlert, hideAlert}
+      })
+    
+    return { alert: alert.text, showAlert, hideAlert }
 }
 
 export default useAlert;
